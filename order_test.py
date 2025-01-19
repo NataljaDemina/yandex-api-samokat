@@ -4,7 +4,7 @@ import data
 def test_order():
 
     # создание заказа
-    request_result = sender_stand_requests.post_create_order();
+    request_result = sender_stand_requests.post_create_order()
 
     # Проверяется, что код ответа равен 201 (заказ создан)
     assert request_result.status_code == 201
